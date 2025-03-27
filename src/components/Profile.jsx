@@ -12,7 +12,7 @@ const Profile = () => {
   const projectList = [
     {
       link_title: "Dermatologist and Spa website",
-      source: Evergreen,
+      source: "https://res.cloudinary.com/dpcczs67n/image/upload/v1742977644/olorunfemi-portfolio/zn7dk6mxh1kskoqsut6p.png",
       title: "Dermatologist connect",
       description:
         "Booking of session with a dermatologist and also spa services and skin treatments",
@@ -21,7 +21,7 @@ const Profile = () => {
     },
     {
       link_title: "Project Management",
-      source: Evergreen,
+      source: "https://res.cloudinary.com/dpcczs67n/image/upload/v1742977639/olorunfemi-portfolio/miammzervqdfdflbpbld.png",
       title: "Evergreen Projects",
       description:
         "Booking of session with a dermatologist and also spa services and skin treatments",
@@ -30,7 +30,7 @@ const Profile = () => {
     },
     {
       link_title: "Dermatologist and Spa website",
-      source: Evergreen,
+      source: "https://res.cloudinary.com/dpcczs67n/image/upload/v1743026752/olorunfemi-portfolio/krm0nxjiqc4boa3avelf.png",
       title: "Swift Eagle Global",
       description:
         "Booking of session with a dermatologist and also spa services and skin treatments",
