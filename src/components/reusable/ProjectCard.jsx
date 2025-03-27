@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import ArrowRight from "../../assets/images/icons/arrow-right.svg";
 import ja from "../../assets/images/icons/js.svg";
 import cs from "../../assets/images/icons/css.svg";
-import Ht from "../../assets/images/icons/Html.svg";
+import Ht from "../../assets/images/icons/html.svg";
 import rreact from "../../assets/images/icons/react.svg";
 import nodejs from "../../assets/images/icons/node.svg";
 import { motion } from "framer-motion";
