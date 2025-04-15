@@ -45,12 +45,12 @@ const Contact = () => {
           <textarea
             rows={2}
             className="form-control"
-            placeholder="Enter Your Budget"
+            placeholder="I have a budget of"
           />
           <textarea
             rows={3}
             className="form-control"
-            placeholder="Write About Your Project Details"
+            placeholder="I want to build........"
           />
           <button>Submit</button>
         </form>

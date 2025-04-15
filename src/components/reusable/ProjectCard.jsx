@@ -146,13 +146,15 @@ const ProjectCard = ({ project, i }) => {
         >
           <div />
         </motion.div>
-        <button className="ephesis-regular">
-          Visit Site{" "}
-          <img
-            className="card__arrow"
-            src={ArrowRight}
-            alt="website link icon"
-          />{" "}
+        <button >
+          <a className="ephesis-regular" href={project.source_link} target="_blank">
+            Visit Site{" "}
+            <img
+              className="card__arrow"
+              src={ArrowRight}
+              alt="website link icon"
+            />{" "}
+          </a>
         </button>
       </div>
       <motion.div
