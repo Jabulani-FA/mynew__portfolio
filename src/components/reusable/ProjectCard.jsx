@@ -7,6 +7,7 @@ import rreact from "../../assets/images/icons/react.svg";
 import nodejs from "../../assets/images/icons/node.svg";
 import { motion } from "framer-motion";
 import cardshape from "../../assets/shapes/h11_services_shape02.svg";
+import { rightAnimation } from "../functions/animations";
 
 const ProjectCard = ({ project, i }) => {
   const cardRef = useRef();
@@ -62,27 +63,7 @@ const ProjectCard = ({ project, i }) => {
     },
   };
 
-  const rightAnimation = (delay) => ({
-    initial: {
-      x: 0,
-      opacity: 0,
-    },
-    visible: {
-      x: 100,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 10,
-        delay: delay,
-        duration: 0.6 + delay,
-      },
-    },
-    exit: {
-      x: 0,
-      opacity: 0,
-    },
-  });
+
   useEffect(() => {
     console.log(isvisible);
   }, [isvisible]);

@@ -16,46 +16,12 @@ import {
   FaGitAlt,
   FaCode,
 } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
 import "react-vertical-timeline-component/style.min.css";
+import { leftSlideVariant, rightSlideVariant } from "./functions/animations";
+import { useNavigate } from "react-router";
 
 const HomeBody = () => {
-  const leftSlideVariant = {
-    initial: { x: "-100%", opacity: 0 },
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 30,
-      },
-    },
-    exit: {
-      x: "-100%",
-      opacity: 0,
-    },
-  };
-  const rightSlideVariant = {
-    initial: { x: "100%", opacity: 0 },
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 30,
-      },
-    },
-    exit: {
-      x: "100%",
-      opacity: 0,
-    },
-  };
+  const navigate = useNavigate();
   return (
     <>
       <Header fore="Akanbi" back="Olorunfemi" />
@@ -100,7 +66,7 @@ const HomeBody = () => {
             date="2020 – Present"
             iconStyle={{ background: "gold", color: "black" }}
             icon={<FaReact />}
-            contentStyle={{ background: "black", color: "white" }}
+            contentStyle={{ background: "#f3f4f6", color: "#111827"  }}
             contentArrowStyle={{ borderRight: "7px solid black" }}
           >
             <h3 className="vertical-timeline-element-title">
@@ -122,9 +88,9 @@ const HomeBody = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2018 – 2020"
-            iconStyle={{ background: "gold", color: "black" }}
+            iconStyle={{ background: "#2563eb", color: "#fff" }}
             icon={<FaHtml5 />}
-            contentStyle={{ background: "black", color: "white" }}
+            contentStyle={{ background: "#f3f4f6", color: "#111827" }}
             contentArrowStyle={{ borderRight: "7px solid black" }}
           >
             <h3 className="vertical-timeline-element-title">
@@ -145,9 +111,9 @@ const HomeBody = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2019 – Present"
-            iconStyle={{ background: "gold", color: "black" }}
+            iconStyle={{ background: "#10b981", color: "#fff" }}
             icon={<FaNodeJs />}
-            contentStyle={{ background: "black", color: "white" }}
+            contentStyle={{ background: "#f3f4f6", color: "#111827" }}
             contentArrowStyle={{ borderRight: "7px solid black" }}
           >
             <h3 className="vertical-timeline-element-title">
@@ -168,9 +134,9 @@ const HomeBody = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2019 – Present"
-            iconStyle={{ background: "gold", color: "black" }}
+            iconStyle={{ background: "#f3f4f6", color: "#111827" }}
             icon={<FaDatabase />}
-            contentStyle={{ background: "black", color: "white" }}
+            contentStyle={{ background: "#f3f4f6", color: "#111827"  }}
             contentArrowStyle={{ borderRight: "7px solid black" }}
           >
             <h3 className="vertical-timeline-element-title">Database Design</h3>
@@ -189,9 +155,9 @@ const HomeBody = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2021 – Present"
-            iconStyle={{ background: "gold", color: "black" }}
+            iconStyle={{ background: "#8b5cf6", color: "#fff" }}
             icon={<FaGitAlt />}
-            contentStyle={{ background: "black", color: "white" }}
+            contentStyle={{ background: "#f3f4f6", color: "#111827" }}
             contentArrowStyle={{ borderRight: "7px solid black" }}
           >
             <h3 className="vertical-timeline-element-title">DevOps & CI/CD</h3>
@@ -210,7 +176,14 @@ const HomeBody = () => {
           <VerticalTimelineElement
             iconStyle={{ background: "gold", color: "black" }}
             icon={<FaCode />}
-          />
+            contentStyle={{ background: "#f3f4f6", color: "#111827" }}
+            contentArrowStyle={{ borderRight: "7px solid black" }}
+          >
+            <h3 className="vertical-timeline-element-title">Let's Check Out My Projects</h3>
+            <p>
+              Click <button className="btn__cta" onClick={() => navigate("/profile")}>Projects</button> to see my previous works
+            </p>
+          </VerticalTimelineElement>
         </VerticalTimeline>
       </section>
 
