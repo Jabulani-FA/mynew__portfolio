@@ -525,6 +525,10 @@ a {
     margin-top: 500px;
     text-align: center;
   }
+  @media (max-width: 400px) {
+    margin-top: 600px;
+    text-align: center;
+  }
 }
 .bottom-space {
   margin-bottom: 100px;
