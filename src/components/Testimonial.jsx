@@ -11,24 +11,24 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const testimonials = [
   {
-    name: "Jane Doe",
+    name: "Adegboye Opeyemi",
     message: "This service exceeded my expectations. Highly recommended!",
-    role: "CEO, Example Corp",
+    role: "Employer, Zentedge Solutions",
   },
   {
-    name: "John Smith",
+    name: "Evergreen projects",
     message: "Amazing experience. Everything was smooth and professional.",
-    role: "Freelancer",
+    role: "Client",
   },
   {
-    name: "Angela Ray",
+    name: "Dermatologist Connect",
     message: "Top-notch service with great attention to detail.",
-    role: "Marketing Manager",
+    role: "Client",
   },
   {
-    name: "Mike Johnson",
+    name: "Swift Eagle Global",
     message: "Very professional team. Will definitely come back again.",
-    role: "Business Owner",
+    role: "Client",
   },
 ];
 

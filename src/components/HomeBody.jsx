@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import Header from "./Header";
 import FlexNav from "./FlexNav";
 import { motion } from "framer-motion";
@@ -9,10 +9,8 @@ import {
 import {
   FaReact,
   FaHtml5,
-  FaCss3Alt,
   FaNodeJs,
   FaDatabase,
-  FaServer,
   FaGitAlt,
   FaCode,
 } from "react-icons/fa";
