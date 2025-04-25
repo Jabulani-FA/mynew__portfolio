@@ -26,11 +26,11 @@ export const divAnimation = ({ direction, type, delay, duration }) => ({
 });
 export const rightAnimation = (delay) => ({
   initial: {
-    x: 0,
+    x: -100,
     opacity: 0,
   },
   visible: {
-    x: 100,
+    x: 0,
     opacity: 1,
     transition: {
       type: "spring",
@@ -41,7 +41,7 @@ export const rightAnimation = (delay) => ({
     },
   },
   exit: {
-    x: 0,
+    x: -100,
     opacity: 0,
   },
 });

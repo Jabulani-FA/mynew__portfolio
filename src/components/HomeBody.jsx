@@ -186,7 +186,6 @@ const HomeBody = () => {
           </VerticalTimelineElement>
         </VerticalTimeline>
       </section>
-
       <FlexNav />
     </>
   );

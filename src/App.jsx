@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import HomeBody from "./components/HomeBody";
 import {Routes, Route} from 'react-router'

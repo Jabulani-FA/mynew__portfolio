@@ -17,11 +17,29 @@
   padding: 0;
 }
 
+.certification__container{
+  margin: 0;
+}
+
 .font-lg {
   font-size: 40px;
 }
 .p-10 {
   padding: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.py-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.rad-5{
+  border-radius: 5px;
 }
 .pt-0 {
   padding-top: 0px;
@@ -34,6 +52,10 @@
   font-family: "Stalemate", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+.shadow-lg{
+  box-shadow: 1px 1px 8px 1px gold;
 }
 
 .ephesis-regular {
@@ -304,13 +326,54 @@ a {
   align-self: center;
 }
 
+/* carousel.css */
+
+.testimonial-card {
+  background: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+}
+
+.testimonial-card.blurred {
+  filter: blur(2px);
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+
+.testimonial-card.focused {
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* .testimonial-slide {
+  filter: blur(3px);
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
+}
+
+.swiper-slide-active,
+.swiper-slide-next,
+.swiper-slide-prev {
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1);
+} */
+
+
 .right__col {
   position: relative;
   width: 600px;
   margin-right: 50px;
   margin-bottom: 100px;
   @media (max-width: 768px) {
-    max-width: 400px;
+    max-width: 80%;
     margin-left: 50px;
   }
 }
@@ -572,6 +635,9 @@ a {
 }
 .mb-50 {
   margin-bottom: 50px;
+}
+.mb-100{
+  margin-bottom: 100px;
 }
 
 .project__card > div > button:active {
