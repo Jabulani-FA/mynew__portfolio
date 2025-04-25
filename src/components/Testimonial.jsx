@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide, } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import quotationMark from "../assets/shapes/quotation-mark.svg"
 
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
@@ -68,6 +69,7 @@ const Testimonial = () => {
             {testimonials.map((t, index) => (
               <SwiperSlide key={index} className="testimonial-slide">
                 <div className="bg-white text-black shadow-lg rounded-xl transition-all duration-700 ease-in-out rounded-xl p-20 py-40 rad-5 mt-20 text-center h-full">
+                  <img className="bg-quote" src={quotationMark} alt="bg-logo"/>
                   <p className="text-lg italic mb-4">"{t.message}"</p>
                   <h4 className="text-xl font-semibold">{t.name}</h4>
                   <span className="text-gray-500">{t.role}</span>
