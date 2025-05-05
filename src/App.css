@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0;
   padding: 0;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(97, 97, 97);
   color: #fff;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -56,11 +56,11 @@
 
 .bg-quote{
   position: absolute;
-  top: 20%;
-  left: 20%;
-  transform: translate(-30%, -30%);
-  scale: 0.6;
-  opacity: 30%;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, -60%);
+  scale: 0.5;
+  opacity: 20%;
 }
 
 .shadow-lg{
@@ -115,7 +115,7 @@
   width: 100vw;
   z-index: 10;
   grid-template-columns: 1fr 4fr;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(97, 97, 97);
 }
 
 .gold {
@@ -150,7 +150,7 @@
   padding: 10px;
   align-self: end;
   width: 100vw;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(97, 97, 97);
   z-index: 100;
   @media (max-width: 768px) {
     position: fixed;
@@ -207,7 +207,7 @@
 .intro__design {
   height: 450px;
   width: 100vw;
-  background: linear-gradient(75deg, rgb(240, 209, 36) 5%, rgb(20, 20, 20) 25%);
+  background: linear-gradient(75deg, rgb(240, 209, 36) 5%, rgb(97, 97, 97) 25%);
   display: flex;
   justify-content: space-around;
   @media (max-width: 768px) {
@@ -215,7 +215,7 @@
     background: linear-gradient(
       75deg,
       rgb(240, 209, 36) 15%,
-      rgb(20, 20, 20) 50%
+      rgb(97, 97, 97) 50%
     );
     display: block;
     padding-top: 50px;
@@ -407,7 +407,7 @@ a {
   margin-bottom: 10px;
   border-radius: 5px;
   border-style: none;
-  border-bottom: 3px solid gold;
+  border-bottom: 3px solid rgba(255, 217, 0, 0.596);
   background-color: rgb(20, 20, 20);
   color: #fff;
   outline: none;
@@ -722,4 +722,31 @@ a {
 }
 .btn__cta:active{
   transform: scale(1);
+}
+
+.project-active {
+  padding: 0 24px;
+  position: relative;
+}
+@media (max-width: 767.98px) {
+  .project-active {
+    padding: 0 10px;
+  }
+}
+.project-active .swiper-slide {
+  transform: scale(0.9);
+  transition: all 200ms linear;
+}
+.project-active .swiper-slide-active {
+  transform: scale(1);
+}
+.project-active .swiper-slide-active .project__thumb img {
+  filter: grayscale(0);
+}
+.project-active .swiper-slide-active .project__content {
+  opacity: 1;
+  overflow: visible;
+}
+.project__item {
+  position: relative;
 }

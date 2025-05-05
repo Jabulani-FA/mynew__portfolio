@@ -46,7 +46,7 @@ const Contact = () => {
     <div>
       <Header fore="Contact" back="Link-Me-Up" />
       <section className="container">
-        <h3 className="stalemate-regular font-lg mb-0 d-flex justify-center">
+        <h3 className="stalemate-regular font-xxl mb-0 d-flex justify-center">
           Info On How It  {" "} <span className="gold"> Works!</span>
         </h3>
         <VerticalTimeline>
